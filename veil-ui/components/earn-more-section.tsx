@@ -2,12 +2,12 @@
 
 export default function EarnMoreSection() {
   return (
-    <section className="w-full min-h-screen flex items-center justify-center py-18 bg-background relative overflow-hidden">
+    <section className="w-full flex items-center justify-center py-16 md:py-24 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center justify-items-center">
           {/* Left: Dashboard Mockup */}
-          <div className="flex justify-center">
-            <div className="relative w-100 h-100">
+          <div className="flex justify-center order-2 md:order-1">
+            <div className="relative w-70 h-80 sm:w-72 sm:h-96 md:w-96 md:h-100">
               {/* Top Card - User Profile */}
               <div className="absolute top-0 left-0 right-0 bg-card rounded-2xl p-5 shadow-xl border border-border/50 transform -rotate-3 z-30">
                 <div className="flex items-center gap-3 mb-4">
@@ -55,15 +55,15 @@ export default function EarnMoreSection() {
           </div>
 
           {/* Right Content */}
-          <div className="space-y-6">
-            <h2 className="text-5xl font-bold leading-tight">
+          <div className="space-y-6 text-center md:text-left order-1 md:order-2">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
               Access <span className="text-primary">Better Terms</span> With Your Credit Score
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground max-w-lg mx-auto md:mx-0">
               High credit scores unlock exclusive benefits across Midnight DeFi. Get lower fees, better rates, and
               priority access to premium strategies—all while staying anonymous.
             </p>
-            <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg hover:shadow-primary/50">
+            <button className="w-full md:w-auto bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg hover:shadow-primary/50">
               Build Credit Score
             </button>
           </div>

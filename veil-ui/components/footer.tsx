@@ -3,20 +3,20 @@
 export default function Footer() {
   return (
     <footer className="w-full py-16 bg-background border-t border-border/50">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+      <div className="container mx-auto px-6 relative z-10 max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12 justify-items-center text-center">
           {/* Newsletter Section */}
           <div className="space-y-4">
             <p className="text-muted-foreground">
               Stay updated on Veil protocol developments, smart contract audits, and Midnight ecosystem integrations.
             </p>
-            <div className="flex gap-3">
+            <div className="flex w-full flex-col sm:flex-row gap-3 justify-center items-center">
               <input
                 type="email"
                 placeholder="your@email.com"
-                className="flex-1 px-4 py-3 rounded-lg bg-input border border-border text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full sm:flex-1 px-4 py-3 rounded-lg bg-input border border-border text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
               />
-              <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
+              <button className="w-full sm:w-auto bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
                 Subscribe
               </button>
             </div>

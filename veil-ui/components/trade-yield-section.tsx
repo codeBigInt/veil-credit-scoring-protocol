@@ -2,30 +2,12 @@
 
 export default function TradeYieldSection() {
   return (
-    <section className="w-full min-h-screen flex items-center justify-center py-18 bg-background relative">
+    <section className="w-full flex items-center justify-center py-16 md:py-24 bg-background relative">
       <div className="container mx-auto px-6 relative z-10 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center justify-items-center">
-          {/* Left Content */}
-          <div className="space-y-6">
-            <div>
-              <h2 className="text-5xl font-bold">
-                On-Chain Verified
-                <br />
-                <span className="text-primary">Credit Scores</span>
-              </h2>
-            </div>
-            <p className="text-lg text-muted-foreground">
-              Veil integrates with DeFi protocols through Witness API calls to track financial behavior and allocate
-              immutable on-chain credit scores without revealing user identities.
-            </p>
-            <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg hover:shadow-primary/50">
-              View Smart Contract
-            </button>
-          </div>
-
-          {/* Right: Credit Score Circle */}
-          <div className="flex justify-center">
-            <div className="relative w-100 h-100">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center justify-items-center">
+          {/* Visual: Credit Score Circle */}
+          <div className="flex justify-center order-2 md:order-1">
+            <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
               {/* Main Circle with Credit Score */}
               <div className="absolute inset-0 rounded-full bg-linear-to-br from-primary to-primary/80 flex items-center justify-center shadow-2xl border border-primary/50">
                 <div className="text-center space-y-2">
@@ -66,6 +48,24 @@ export default function TradeYieldSection() {
                 <p className="text-xs text-muted-foreground">Identity shielded always</p>
               </div>
             </div>
+          </div>
+          
+          {/* Left Content */}
+          <div className="space-y-6 text-center md:text-left order-1 md:order-2">
+            <div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+                On-Chain Verified
+                <br />
+                <span className="text-primary">Credit Scores</span>
+              </h2>
+            </div>
+            <p className="text-lg text-muted-foreground max-w-lg mx-auto md:mx-0">
+              Veil integrates with DeFi protocols through Witness API calls to track financial behavior and allocate
+              immutable on-chain credit scores without revealing user identities.
+            </p>
+            <button className="w-full md:w-auto bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg hover:shadow-primary/50">
+              View Smart Contract
+            </button>
           </div>
         </div>
       </div>

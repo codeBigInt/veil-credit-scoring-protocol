@@ -13,7 +13,7 @@ export default function EcosystemSection() {
   ]
 
   return (
-    <section className="w-full py-24 bg-gradient-to-b from-background to-slate-950/30">
+    <section className="w-full py-24 bg-linear-to-b from-background to-slate-950/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold">
