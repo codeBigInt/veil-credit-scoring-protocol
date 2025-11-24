@@ -2,12 +2,12 @@
 
 export default function BuildSection() {
   return (
-    <section className="w-full py-24 bg-slate-950/40 relative overflow-hidden">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section className="w-full flex items-center justify-center py-16 md:py-24 bg-slate-950/40 relative overflow-hidden">
+      <div className="container mx-auto px-6 relative z-10 max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center justify-items-center">
           {/* Left: Tech Architecture Graphic */}
-          <div className="flex justify-center relative h-96">
-            <svg viewBox="0 0 300 300" className="w-full max-w-sm" xmlns="http://www.w3.org/2000/svg">
+          <div className="flex justify-center order-2 md:order-1">
+            <svg viewBox="0 0 300 300" className="w-full max-w-xs sm:max-w-sm md:max-w-md" xmlns="http://www.w3.org/2000/svg">
               {/* Central Shield */}
               <path
                 d="M 150 50 L 200 80 L 200 150 Q 150 200 150 200 Q 150 200 100 150 L 100 80 Z"
@@ -58,15 +58,15 @@ export default function BuildSection() {
           </div>
 
           {/* Right Content */}
-          <div className="space-y-6">
-            <h2 className="text-5xl font-bold">
+          <div className="space-y-6 text-center md:text-left order-1 md:order-2">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
               <span className="text-primary">Integrate</span> Veil Into Your Protocol
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground max-w-lg mx-auto md:mx-0">
               Leverage Veil's on-chain verifiable credit scoring smart contract through Witness API calls. Enable
               trustworthiness verification without compromising user privacy on Midnight.
             </p>
-            <div className="space-y-3">
+            <div className="space-y-3 max-w-lg mx-auto md:mx-0">
               <div className="flex items-start gap-3">
                 <span className="text-primary font-bold">✓</span>
                 <p className="text-muted-foreground">Permissionless API integration</p>
@@ -80,7 +80,7 @@ export default function BuildSection() {
                 <p className="text-muted-foreground">Immutable credit history</p>
               </div>
             </div>
-            <button className="border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary/10 transition-colors">
+            <button className="w-full md:w-auto border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary/10 transition-colors">
               Read API Docs
             </button>
           </div>
